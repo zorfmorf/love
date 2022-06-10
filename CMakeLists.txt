@@ -1680,6 +1680,17 @@ set(LOVE_SRC_3P_XXHASH
 
 add_library(love_3p_xxhash ${LOVE_SRC_3P_XXHASH})
 
+
+#
+# luasymmetric
+#
+
+set(LOVE_SRC_3P_LUASYMMETRIC
+	src/libraries/luasymmetric/luasymmetric.c
+)
+
+add_library(love_3p_luasymmetric ${LOVE_SRC_3P_LUASYMMETRIC})
+
 set(LOVE_3P
 	love_3p_box2d
 	love_3p_ddsparse
@@ -1688,6 +1699,7 @@ set(LOVE_3P
 	love_3p_glslang
 	love_3p_lodepng
 	love_3p_luasocket
+    love_3p_luasymmetric
 	love_3p_lua53
 	love_3p_lz4
 	love_3p_noise1234
